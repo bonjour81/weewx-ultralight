@@ -9,7 +9,7 @@ def loader():
 class ultralightInstaller(ExtensionInstaller):
     def __init__(self):
         super(ultralightInstaller, self).__init__(
-            version = "1.0",
+            version = "0.1",
             name = 'ultralight',
             description = 'An ultra light weight skin',
             author = "F.Stuyk",
