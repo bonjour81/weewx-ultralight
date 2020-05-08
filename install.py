@@ -32,5 +32,20 @@ class ultralightInstaller(ExtensionInstaller):
                      'skins/ultralight/images/b.gif',
                      'skins/ultralight/images/nav-current.jpg',
                      'skins/ultralight/images/nav.jpg'])
+                   ('skins/ultralight/favicon',
+                    ['skins/ultralight/favicon/android-chrome-192x192.png',
+                     'skins/ultralight/favicon/android-chrome-512x512.png',
+                     'skins/ultralight/favicon/apple-touch-icon.png',
+                     'skins/ultralight/favicon/browserconfig.xml',
+                     'skins/ultralight/favicon/favicon.ico',
+                     'skins/ultralight/favicon/favicon-16x16.png',
+                     'skins/ultralight/favicon/favicon-32x32.png',
+                     'skins/ultralight/favicon/mstile-70x70.png',
+                     'skins/ultralight/favicon/mstile-144x144.png',
+                     'skins/ultralight/favicon/mstile-150x150.png',
+                     'skins/ultralight/favicon/mstile-310x150.png',
+                     'skins/ultralight/favicon/mstile-310x310.png',
+                     'skins/ultralight/favicon/safari-pinned-tab.svg',
+                     'skins/ultralight/favicon/site.webmanifest'])
                    ]
             )  
