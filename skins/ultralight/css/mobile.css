@@ -1,33 +1,146 @@
 @charset "UTF-8";
-@font-face {
-    font-family:'ClimaconsRegular';
-    src: url('../fonts/climacons-webfont.eot');
-    src: url('../fonts/climacons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/climacons-webfont.woff') format('woff'),
-         url('../fonts/climacons-webfont.ttf') format('truetype');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial;
     font-weight: normal;
-    font-style: normal;
 }
-* {margin:0; padding:0;font-family: Verdana,Arial;font-weight:normal;}
-#header {float: left;background: url(../images/nav.jpg) repeat-x;width: 100%;text-transform: uppercase;text-align: center;margin-bottom: 5px;padding: 10px 0px;	display: inline;color:#FFF;}
-body {background-color:#e8e8e8;border:5px solid #FFF;}
-#footer {background-color: #dcdcdc;color: #666;margin: 0px auto;width: auto;padding: 10px 0px;text-align: center;border-top: 2px solid #d0d0d0;}
-#footer a, a:visited {color: #666;text-decoration: none;}
-#footer a:hover {text-decoration: underline;}
-.icon {font: normal 1.5em 'ClimaconsRegular';vertical-align:middle;text-transform:none;}
-h1 {text-align:center;font-size: 1.5em;}
-h2 {text-align:center;font-size: 1em;padding:5px;}
-h2.red {color: red;}
-#acc3 {width:auto; margin-top:auto; border:1px solid #333; border-top:none;}
-.acc3 {width:100%; color:#333;}
-.acc3 dt {width:auto;padding:16px 20px 16px 8px; cursor:pointer; background-color:#666; background-image:url(../images/arrow_down.gif); background-position:right center; background-repeat:no-repeat; color:#fff; border-top:1px solid #333;}
-.acc3 dt:hover {background-color:#555;}
-.acc3 .open {background-color:#444; background-image:url(../images/arrow_up.gif);}
-.acc3 dd {overflow:hidden; background:#fff;}
-.acc3 div {width: auto;max-width:100%;border-top:none; padding:0 0 5px 0;text-align:center;}
-dt.rad {text-align:center;width:auto;padding:16px 20px 16px 8px;background-color:#555; color:#fff; border-bottom:1px solid #333;background: url(../images/nav-current.jpg) repeat-x;}
-div#rad {padding:0;}
-img{padding:0px;}
-img.rad{max-width:100%;height:auto;}
-hr{border: 0;max-height: 1px; background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
-p {padding: 5px 0;}
+
+#header {
+    float: left;
+    background: url(../images/nav.jpg) repeat-x;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px 0px;
+    display: inline;
+    color: #FFF;
+}
+
+body {
+    background-color: #e8e8e8;
+    border: 5px solid #FFF;
+}
+
+#footer {
+    background-color: #dcdcdc;
+    color: #666;
+    margin: 0px auto;
+    width: auto;
+    padding: 10px 0px;
+    text-align: center;
+    border-top: 2px solid #d0d0d0;
+}
+
+#footer a, a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    font: normal 1.5em 'ClimaconsRegular';
+    vertical-align: middle;
+    text-transform: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+}
+
+h2.red {
+    color: red;
+}
+
+#acc3 {
+    width: auto;
+    margin-top: auto;
+    border: 1px solid #333;
+    border-top: none;
+}
+
+.acc3 {
+    width: 100%;
+    color: #333;
+}
+
+.acc3 dt {
+    width: auto;
+    padding: 16px 20px 16px 8px;
+    cursor: pointer;
+    background-color: #666;
+    background-image: url(../images/arrow_down.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-top: 1px solid #333;
+}
+
+.acc3 dt:hover {
+    background-color: #555;
+}
+
+.acc3 .open {
+    background-color: #444;
+    background-image: url(../images/arrow_up.gif);
+}
+
+.acc3 dd {
+    overflow: hidden;
+    background: #fff;
+}
+
+.acc3 div {
+    width: auto;
+    max-width: 100%;
+    border-top: none;
+    padding: 0 0 5px 0;
+    text-align: center;
+}
+
+dt.rad {
+    text-align: center;
+    width: auto;
+    padding: 16px 20px 16px 8px;
+    background-color: #555;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    background: url(../images/nav-current.jpg) repeat-x;
+}
+
+div#rad {
+    padding: 0;
+}
+
+img {
+    padding: 0px;
+}
+
+img.rad {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    max-height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+p {
+    padding: 5px 0;
+}

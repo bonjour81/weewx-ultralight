@@ -1,120 +1,129 @@
 #encoding UTF-8
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <title>$Extras.title_mobile</title>
-        <link rel="stylesheet" href="css/mobile.css" type="text/css" />
-        <script src="js/collapsible.js"></script>
-        <script>
-            function ins_gr(\$id, \$imgurl, \$id2, \$imgurl2) {
-                document.getElementById(\$id).innerHTML = "\x3Cimg src='" + \$imgurl + "' alt='graph'  />";
-                document.getElementById(\$id2).innerHTML = "\x3Cimg src='" + \$imgurl2 + "' alt='graph'  />";
-            }
-            function ins_gr2(\$id, \$imgurl, \$id2, \$imgurl2, \$id3, \$imgurl3, \$id4, \$imgurl4) {
-                ins_gr(\$id, \$imgurl, \$id2, \$imgurl2);
-                ins_gr(\$id3, \$imgurl3, \$id4, \$imgurl4);
-            }
-        </script>
-    </head>
-    <body>
-        <div id="header">
-            <h1>$Extras.title_mobile</h1>
-        </div>
-        ## fin header ## debut date
-        <div>
-            <h2>$current.dateTime</h2>
-        </div>
-        ##fin date / debut corps
-        <div id="acc3">
-            <dl class="acc3" id="sl3">
-                <dt onmouseover="ins_gr('dte','daytempdew.png','wte','weektempdew.png')">$obs.label.outTemp: $current.outTemp (min:$day.outTemp.min, max:$day.outTemp.max)</dt>
-                <dd>
-                    <div>
-                        <h2>$Extras.today</h2>
-                        <div id="dte"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <hr />
-                        <h2>$Extras.sevenday</h2>
-                        <div id="wte"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        Min $week.outTemp.min, $week.outTemp.mintime<br />
-                        Max $week.outTemp.max, $week.outTemp.maxtime
-                    </div>
-                </dd>
-                <dt onmouseover="ins_gr('dhu','dayhumidity.png','whu','weekhumidity.png')">$obs.label.outHumidity: $current.outHumidity</dt>
-                <dd>
-                    <div>
-                        <h2>$Extras.today</h2>
-                        <div id="dhu"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <hr />
-                        <h2>$Extras.sevenday</h2>
-                        <div id="whu"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        Min $week.outHumidity.min, $week.outHumidity.mintime<br />
-                        Max $week.outHumidity.max, $week.outHumidity.maxtime
-                    </div>
-                </dd>
-                <dt onmouseover="ins_gr('dra','dayrain.png','mra','monthrain.png')">$obs.label.rain: $day.rain.sum ($current.rainRate.string("0.0 mm/h"))</dt>
-                <dd>
-                    <div>
-                        <p>
-                            $Extras.today: $day.rain.sum<br />
-                            $day.rainRate.max ($day.rainRate.maxtime)
-                        </p>
-                        <div id="dra"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <hr />
-                        <p>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>$Extras.title_mobile</title>
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+    <script src="js/collapsible.js"></script>
+    <script>
+        function ins_gr(\$id, \$imgurl, \$id2, \$imgurl2) {
+            document.getElementById(\$id).innerHTML = "\x3Cimg src='" + \$imgurl + "' alt='graph'  />";
+            document.getElementById(\$id2).innerHTML = "\x3Cimg src='" + \$imgurl2 + "' alt='graph'  />";
+        }
+        function ins_gr2(\$id, \$imgurl, \$id2, \$imgurl2, \$id3, \$imgurl3, \$id4, \$imgurl4) {
+            ins_gr(\$id, \$imgurl, \$id2, \$imgurl2);
+            ins_gr(\$id3, \$imgurl3, \$id4, \$imgurl4);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>$Extras.title_mobile</h1>
+    </div>
+    ## fin header ## debut date
+    <div>
+        <h2>$current.dateTime</h2>
+    </div>
+    ##fin date / debut corps
+    <div id="acc3">
+        <dl class="acc3" id="sl3">
+            <dt onmouseover="ins_gr('dte','daytempdew.png','wte','weektempdew.png')">$obs.label.outTemp:
+                $current.outTemp (min:$day.outTemp.min, max:$day.outTemp.max)</dt>
+            <dd>
+                <div>
+                    <h2>$Extras.today</h2>
+                    <div id="dte"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <hr />
+                    <h2>$Extras.sevenday</h2>
+                    <div id="wte"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    Min $week.outTemp.min, $week.outTemp.mintime<br />
+                    Max $week.outTemp.max, $week.outTemp.maxtime
+                </div>
+            </dd>
+            <dt onmouseover="ins_gr('dhu','dayhumidity.png','whu','weekhumidity.png')">$obs.label.outHumidity:
+                $current.outHumidity</dt>
+            <dd>
+                <div>
+                    <h2>$Extras.today</h2>
+                    <div id="dhu"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <hr />
+                    <h2>$Extras.sevenday</h2>
+                    <div id="whu"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    Min $week.outHumidity.min, $week.outHumidity.mintime<br />
+                    Max $week.outHumidity.max, $week.outHumidity.maxtime
+                </div>
+            </dd>
+            <dt onmouseover="ins_gr('dra','dayrain.png','mra','monthrain.png')">$obs.label.rain: $day.rain.sum
+                ($current.rainRate.string("0.0 mm/h"))</dt>
+            <dd>
+                <div>
+                    <p>
+                        $Extras.today: $day.rain.sum<br />
+                        $day.rainRate.max ($day.rainRate.maxtime)
+                    </p>
+                    <div id="dra"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <hr />
+                    <p>
                         $Extras.thirtyday: $month.rain.sum<br />
                         $month.rainRate.max, $month.rainRate.maxtime
-                        </p>
-                        <div id="mra"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                    </div>
-                </dd>
-                <dt onmouseover="ins_gr('dba','daybarometer.png','wba','weekbarometer.png')">Baromètre: $current.barometer</dt>
-                <dd>
-                    <div>
-                        <h2>$Extras.today</h2>
-                        <div id="dba"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <hr />
-                        <h2>$Extras.sevenday</h2>
-                        <div id="wba"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <p>
-                            Min $week.barometer.min, $week.barometer.mintime<br />
-                            Max $week.barometer.max, $week.barometer.maxtime
-                        </p>
-                    </div>
-                </dd>
-                <dt onmouseover="ins_gr2('dwi','daywind.png','dwd','daywinddir.png','wwi','weekwind.png','wwd','weekwinddir.png')">Vent: $current.windSpeed de $current.windDir.ordinal_compass</dt>
-                <dd>
-                    <div>
-                        <p>
-                            $Extras.today, max: $day.windSpeed.max ($day.windSpeed.maxtime)<br />
-                        </p>
-                        <div id="dwi"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <div id="dwd"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <hr />
-                        <p>
-                            $Extras.sevenday, max: $week.windSpeed.max $week.windSpeed.maxtime<br />
-                        </p>
-                        <div id="wwi"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                        <div id="wwd"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
-                    </div>
-                </dd>
-            </dl>
-        </div>
-        ##fin div acc3 / corps
-        <div id="footer"><a href="index.php" rel="external">$Extras.website_txt</a> | <a href="http://www.weewx.com">WeeWX v$station.version</a></div>
-        <script>
-            var sl3 = new accordion.slider("sl3");
-            sl3.init("sl3", -1, "open");
-        </script>
-    </body>
-</html>
+                    </p>
+                    <div id="mra"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                </div>
+            </dd>
+            <dt onmouseover="ins_gr('dba','daybarometer.png','wba','weekbarometer.png')">Baromètre: $current.barometer
+            </dt>
+            <dd>
+                <div>
+                    <h2>$Extras.today</h2>
+                    <div id="dba"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <hr />
+                    <h2>$Extras.sevenday</h2>
+                    <div id="wba"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <p>
+                        Min $week.barometer.min, $week.barometer.mintime<br />
+                        Max $week.barometer.max, $week.barometer.maxtime
+                    </p>
+                </div>
+            </dd>
+            <dt
+                onmouseover="ins_gr2('dwi','daywind.png','dwd','daywinddir.png','wwi','weekwind.png','wwd','weekwinddir.png')">
+                Vent: $current.windSpeed de $current.windDir.ordinal_compass</dt>
+            <dd>
+                <div>
+                    <p>
+                        $Extras.today, max: $day.windSpeed.max ($day.windSpeed.maxtime)<br />
+                    </p>
+                    <div id="dwi"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <div id="dwd"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <hr />
+                    <p>
+                        $Extras.sevenday, max: $week.windSpeed.max $week.windSpeed.maxtime<br />
+                    </p>
+                    <div id="wwi"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                    <div id="wwd"><img width="300" height="190" src="images/b.gif" alt="empty" /></div>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    ##fin div acc3 / corps
+    <div id="footer"><a href="index.php" rel="external">$Extras.website_txt</a> | <a href="http://www.weewx.com">WeeWX
+            v$station.version</a></div>
+    <script>
+        var sl3 = new accordion.slider("sl3");
+        sl3.init("sl3", -1, "open");
+    </script>
+</body>
 
+</html>
