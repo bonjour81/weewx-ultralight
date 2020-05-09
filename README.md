@@ -1,6 +1,6 @@
 # weewx-ultralight
 
-##An Ultra lightweight skin for weewx
+### An Ultra lightweight skin for weewx
 
 ![Screenshot](https://i.ibb.co/ZXL0D79/screen-ultralight1.png)
 
@@ -18,13 +18,13 @@ Favicon can be modified or removed in case you need even less kB !
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 </a>
 
-##For installation:
+### For installation:
 ```
 wget -O ultralight.gz https://github.com/bonjour81/weewx-ultralight/tarball/master 
 sudo wee_extension --install ultralight.gz 
 ```
 
-##For un-install:
+### For un-install:
 ```
 sudo wee_extension --uninstall ultralight
 ```
