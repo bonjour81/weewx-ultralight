@@ -13,9 +13,7 @@ Favicon can be modified or removed in case you need even less kB !
 
 [A demo page is visible here](https://www.meteosaintsulpice.fr/ultra/)
 
-The page is [HTML5 & CSS3 valid](https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Fwww.meteosaintsulpice.fr%2Fultra%2F&ucn_lang=fr&ucn_task=conformance#)
-
-<a href="http://www.w3.org/html/logo/">
+<a href="https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Fwww.meteosaintsulpice.fr%2Fultra%2F&ucn_lang=fr&ucn_task=conformance#">
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 </a>
 
