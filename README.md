@@ -18,13 +18,26 @@ Favicon can be modified or removed in case you need even less kB !
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 </a>
 
-### For installation:
+### Installation:
 ```
 wget -O ultralight.gz https://github.com/bonjour81/weewx-ultralight/tarball/master 
 sudo wee_extension --install ultralight.gz 
 ```
 
-### For un-install:
+### Tuning:
+
+Please modify the keys in [Extras] section in skin.conf to match your needs:
+```
+[Extras]
+    title_mobile=Meteo Saint-Sulpice         # page header
+    website_txt=Full site                    # link text in footer to full website.
+    website=http://www.meteosaintsulpice.fr  # link in footer to full desktop website
+    today=Aujourd'hui  # set here your translation for "today"
+    sevenday=7 jours   # set here your translation for "7 days"
+    thirtyday=30 jours # set here your translation for "30 days"
+```
+
+### Un-install:
 ```
 sudo wee_extension --uninstall ultralight
 ```
