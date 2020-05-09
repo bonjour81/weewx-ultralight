@@ -17,6 +17,7 @@
 }
 
 body {
+    font-family: FreeSans, 'Roboto', Arial, Helvetica, Liberation Sans, sans-serif;
     background-color: #e8e8e8;
     border: 5px solid #FFF;
 }
